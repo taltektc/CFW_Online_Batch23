@@ -10,4 +10,12 @@ public class Config {
 
 
     // if/else
+
+    // What's left
+    // Cross-browser
+    // Cross-env (qa/stage/prod) - Hook.class
+    // Use different test data for different env
+    // Report - if test fail, take screenshot
+    // CI/CD using Jenkins
+
 }

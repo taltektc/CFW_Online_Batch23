@@ -1,4 +1,4 @@
-Feature: Login
+Feature: Login/Sign In
 
   Scenario: User able to login with valid credentials
     Given I am at TalentTEK Homepage
