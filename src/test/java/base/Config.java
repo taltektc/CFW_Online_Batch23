@@ -18,4 +18,6 @@ public class Config {
     // Report - if test fail, take screenshot
     // CI/CD using Jenkins
 
+    // this is branch testing
+    // this branch testing 2
 }
