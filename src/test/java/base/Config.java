@@ -1,23 +1,27 @@
 package base;
 
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.safari.SafariDriver;
+
+import java.time.Duration;
 
 public class Config {
-    public static WebDriver driver; // Init the webdriver
+    public static WebDriver driver;
 
-    // Set up the driver
-    // ch / ff or what?
+    public static WebDriver setupBrowser (String driverType){
+        if(driverType.equalsIgnoreCase("chrome")){
+            driver = new ChromeDriver();
+        } else if (driverType.equalsIgnoreCase("firefox")){
+            driver = new FirefoxDriver();
+        } else if (driverType.equalsIgnoreCase("safari")){
+            driver = new SafariDriver();
+        }
+        driver.manage().window().maximize();
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
+        return driver;
+    }
 
 
-    // if/else
-
-    // What's left
-    // Cross-browser
-    // Cross-env (qa/stage/prod) - Hook.class
-    // Use different test data for different env
-    // Report - if test fail, take screenshot
-    // CI/CD using Jenkins
-
-    // this is branch testing
-    // this branch testing 2
 }

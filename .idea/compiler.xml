@@ -10,7 +10,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="CFW_Online_Batch23" target="1.5" />
+      <module name="CFW_Online_Batch23" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
