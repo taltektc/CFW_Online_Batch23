@@ -11,4 +11,4 @@ Java, Selenium WD, CucumberBDD, Jenkins, Git, CI/CD, TestNG, Maven, POM.xml ect
 
 
 # How to run the test?
-mvn verify -D env=qa -D browser=chrome -Dcucumber.filter.tags=@smoke
+mvn verify -Denv=qa -Dbrowser=chrome -Dcucumber.filter.tags=@hb
