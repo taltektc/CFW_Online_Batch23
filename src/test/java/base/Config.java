@@ -9,6 +9,7 @@ import java.time.Duration;
 
 public class Config {
     // This is a setup class
+    // This is milon code
     public static WebDriver driver;
 
     public static WebDriver setupBrowser (String driverType){
