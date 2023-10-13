@@ -8,8 +8,11 @@ import org.openqa.selenium.safari.SafariDriver;
 import java.time.Duration;
 
 public class Config {
+    // This is a setup class
+    // This is milon code
     // This is Sanjida branch
     // I am working on xyz test cases
+
     public static WebDriver driver;
 
     public static WebDriver setupBrowser (String driverType){
