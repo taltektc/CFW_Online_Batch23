@@ -5,10 +5,11 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.safari.SafariDriver;
 import org.openqa.selenium.safari.SafariOptions;
+import org.testng.annotations.Test;
 
 import java.time.Duration;
 
-public class Config {
+public class Config extends TestData {
      public static WebDriver driver;
 
     public static WebDriver setupBrowser (String driverType){
