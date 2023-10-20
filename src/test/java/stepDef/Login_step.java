@@ -16,10 +16,10 @@ public class Login_step extends TestData {
 
     @And("I enter my valid email address")
     public void iEnterMyValidEmailAddress() {
-        loginPage.enterEmail(GLOBAL_STUDENT_EMAIL); // Still hard-coded
+        loginPage.enterEmail("hassan.qa@gmail.com"); // Still hard-coded
     }
 
-    @And("I enter my valid password")
+   @And("I enter my valid password")
     public void iEnterMyValidPassword() {
         loginPage.enterPassword(GLOBAL_STUDENT_PASSWORD);
     }

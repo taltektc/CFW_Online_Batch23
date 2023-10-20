@@ -2,7 +2,7 @@
 Java, Selenium WD, CucumberBDD, Jenkins, Git, CI/CD, TestNG, Maven, POM.xml ect
 
 # How to run the test?
-mvn verify -Denv=qa -Dbrowser=chrome -Dcucumber.filter.tags=@hb
+mvn verify -Denv=qa -Dbrowser=chrome -Dcucumber.filter.tags=@sd
 
 # How to merge code
 - git checkout main

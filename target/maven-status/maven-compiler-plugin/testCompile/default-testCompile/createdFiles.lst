@@ -1,7 +1,9 @@
 stepDef/Login_step.class
 stepDef/Hook.class
 stepDef/Profile_step.class
+stepDef/SauceDemo_step.class
 base/TestData.class
 pageObject/Login_page.class
+pageObject/SauceDemoLogin_page.class
 base/Config.class
 TestRunner.class

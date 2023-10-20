@@ -1,43 +1,77 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-10-15T11:43:53 EDT" name="Surefire suite" finished-at="2023-10-15T11:43:59 EDT" duration-ms="5944">
+  <suite started-at="2023-10-19T21:01:22 EDT" name="Surefire suite" finished-at="2023-10-19T21:01:31 EDT" duration-ms="8362">
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner@7a52f2a2]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner@527e5409]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2023-10-15T11:43:53 EDT" name="Surefire test" finished-at="2023-10-15T11:43:59 EDT" duration-ms="5944">
+    <test started-at="2023-10-19T21:01:22 EDT" name="Surefire test" finished-at="2023-10-19T21:01:31 EDT" duration-ms="8362">
       <class name="TestRunner">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:TestRunner@7a52f2a2]" started-at="2023-10-15T11:43:53 EDT" name="setUpClass" finished-at="2023-10-15T11:43:53 EDT" duration-ms="207" status="PASS">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:TestRunner@527e5409]" started-at="2023-10-19T21:01:22 EDT" name="setUpClass" finished-at="2023-10-19T21:01:23 EDT" duration-ms="251" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@f5ac9e4]]>
+                <![CDATA[org.testng.TestRunner@6c80d78a]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner@7a52f2a2]" started-at="2023-10-15T11:43:53 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-10-15T11:43:58 EDT" duration-ms="5377" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner@527e5409]" started-at="2023-10-19T21:01:23 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-10-19T21:01:27 EDT" duration-ms="4826" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA["User able to login with valid credentials"]]>
+                <![CDATA["User able to login with valid credentials in SauceDemo"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["Login/Sign In"]]>
+                <![CDATA["SauceDemo"]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:TestRunner@7a52f2a2]" started-at="2023-10-15T11:43:58 EDT" name="tearDownClass" finished-at="2023-10-15T11:43:59 EDT" duration-ms="328" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner@527e5409]" started-at="2023-10-19T21:01:27 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-10-19T21:01:30 EDT" duration-ms="2953" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Failing test on purpose"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["SauceDemo"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Swag Labsssss] but found [Swag Labs]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Swag Labsssss] but found [Swag Labs]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:656)
+at org.testng.Assert.assertEquals(Assert.java:666)
+at pageObject.SauceDemoLogin_page.verifyLogoName(SauceDemoLogin_page.java:30)
+at stepDef.SauceDemo_step.verifyLogoNameForSauceDemo(SauceDemo_step.java:39)
+at ✽.Verify logo name for SauceDemo(file:///Users/hbhuiyan/Documents/TalentTEK/GitStuff/CFW_Online_Batch23/src/test/java/features/SauceDemo.feature:13)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:TestRunner@527e5409]" started-at="2023-10-19T21:01:30 EDT" name="tearDownClass" finished-at="2023-10-19T21:01:31 EDT" duration-ms="289" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
