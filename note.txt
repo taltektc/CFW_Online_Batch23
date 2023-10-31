@@ -1,8 +1,0 @@
-What's left?
-- Background in feature file
-- Data driven test in feature file
-- How to run the test in CI/CD using Jenkins and GitHub
-
-Student Task
-- Do a final project using the CucumberFW
-    - You can pick any web application
