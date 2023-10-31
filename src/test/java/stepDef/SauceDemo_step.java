@@ -38,4 +38,19 @@ public class SauceDemo_step extends Config {
     public void verifyLogoNameForSauceDemo() {
         sdlp.verifyLogoName();
     }
+
+    @And("I enter my valid {string} and {string} at SauceDemo")
+    public void iEnterMyValidUserNameAndPasswordAtSauceDemo(String userName, String password) {
+        sdlp.enterUsername(userName);
+        sdlp.enterPassword(password);
+    }
+
+    @And("I enter my invalid username at SauceDemo")
+    public void iEnterMyInvalidUsernameAtSauceDemo() {
+        
+    }
+
+    @Then("I should not be able to successfully login at SauceDemo")
+    public void iShouldNotBeAbleToSuccessfullyLoginAtSauceDemo() {
+    }
 }

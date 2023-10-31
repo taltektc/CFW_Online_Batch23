@@ -18,7 +18,7 @@ public class Hook extends Config {
         switch (envType){
             case "qa":
                 //baseURL = "https://qa.taltektc.com";
-                baseURL = "https://www.qa.saucedemo.com/";
+                baseURL = "https://www.saucedemo.com/";
                 SAUCE_DEMO_USER_NAME = "standard_user";
                 SAUCE_DEMO_PASSWORD = "secret_sauce";
                 break;
